@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Splits</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Fitness Splits</h1>
+      <p>
+        Find the best fitness plan based on your lifestyle and time
+        availability!
+      </p>
+    </header>
+
+    <main>
+      <section id="input-section">
+        <h2>Select Your Preferences</h2>
+        <label for="occupation">Occupation:</label>
+        <select id="occupation">
+          <option value="student">Student</option>
+          <option value="working-professional">Working Professional</option>
+          <option value="stay-at-home">Stay-at-Home</option>
+        </select>
+
+        <label for="time">Available Time Per Day:</label>
+        <select id="time">
+          <option value="15">15 Minutes</option>
+          <option value="30">30 Minutes</option>
+          <option value="60">1 Hour</option>
+          <option value="90">1.5 Hours</option>
+        </select>
+
+        <button id="generate-split">Generate Fitness Split</button>
+      </section>
+
+      <section id="output-section">
+        <h2>Your Fitness Split</h2>
+        <div id="fitness-plan"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Fitness Splits</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
